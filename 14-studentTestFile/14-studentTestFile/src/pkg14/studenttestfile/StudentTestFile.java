@@ -1,4 +1,6 @@
 
+package pkg14.studenttestfile;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -14,7 +16,7 @@ import java.io.Serializable;
 
 import java.util.*;
 
-public class project1Student{
+public class StudentTestFile{
     private static Scanner sc = new Scanner(System.in);
     private static ArrayList<student> a = new ArrayList<student>();
     private static int count=0;
@@ -166,7 +168,7 @@ public class project1Student{
     public static void editStudent(){
 	String name = "";
 	int check =0;
-	System.out.println("Please enter student you want to Delete:");
+	System.out.println("Please enter student you want to Edit:");
 	name = sc.nextLine();
 	if(a.size() == 0) System.out.println("THE LIST IS EMPTY");
 	else{

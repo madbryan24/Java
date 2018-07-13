@@ -1,0 +1,5 @@
+pkg23.swingt.BorderLayoutTest$1
+pkg23.swingt.BorderLayoutTest
+borderlayouttest.BorderLayoutTest
+borderlayouttest.myBorderLayout
+pkg23.swingt.myBorderLayout
