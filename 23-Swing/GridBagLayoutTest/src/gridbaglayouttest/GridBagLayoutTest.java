@@ -33,13 +33,14 @@ public class GridBagLayoutTest {
 }
 
 class myGridBagLayout extends JFrame{
+        JPanel JPnorth,JPsouth,JPeast,JPwest,JPcenter;
+        JPanel JPGBL;
+        JLabel JLnorth,JLsouth,JLeast,JLwest,JLcenter;
+        
     public myGridBagLayout(String s){
         super(s);
-        JPanel JPGBL = new JPanel();
+        JPGBL = new JPanel();
         JPGBL.setLayout(new GridBagLayout());
-        
-        JPanel JPnorth,JPsouth,JPeast,JPwest,JPcenter;
-        JLabel JLnorth,JLsouth,JLeast,JLwest,JLcenter;
         
         JPnorth = new JPanel();
         JPnorth.setBackground(Color.yellow);

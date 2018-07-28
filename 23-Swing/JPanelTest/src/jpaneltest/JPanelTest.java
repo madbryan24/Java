@@ -37,13 +37,14 @@ public class JPanelTest {
 }
 
 class myGridBagLayout extends JFrame{
-    public myGridBagLayout(String s){
-        super(s);
         JPanel JPGBL = new JPanel();
-        JPGBL.setLayout(new GridBagLayout());
-        
         JPanel JPnorth,JPsouth,JPeast,JPwest,JPcenter;
         JLabel JLnorth,JLsouth,JLeast,JLwest,JLcenter;
+        
+    public myGridBagLayout(String s){
+        super(s);
+
+        JPGBL.setLayout(new GridBagLayout());
         
         JPnorth = new JPanel();
         JPnorth.setBackground(Color.yellow);
@@ -113,7 +114,8 @@ class myGridBagLayout extends JFrame{
         JPGBL.add(JPnorth,GBC1);
         JPGBL.add(JPsouth,GBC2);
         JPGBL.add(JPeast,GBC3);
-        
+    
+        //set title
         TitledBorder title = new TitledBorder("Title");
         JPGBL.setBorder(title);
 
